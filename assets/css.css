@@ -1,11 +1,11 @@
 /* Reset CSS */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html{
-    font-family: Arial, Helvetica, sans-serif;
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* 
 1.tu ngoai vao trong 
@@ -19,39 +19,104 @@ html{
 3.mau sac
 4.kieu dang (kieu chu , hinh trong , vuong , .....)
  */
-#main{
-    
+#main {
+
+}
+#header {
+  height: 46px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#nav{
+  display: inline-block;
+}
+#nav li {
+  display: inline-block;
+  position: relative;
+}
+#nav > li > a {
+  color: white;
+  text-transform: uppercase;
+}
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: inline-block;
+}
+#nav > li > a:hover,
+#nav .subnav li a:hover {
+  color: black;
+  background-color: #ccc;
+}
+#nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  top: 100%;
+}
+#nav .subnav li {
+  display: block;
+}
+#nav .subnav a {
+  min-width: 160px;
+  display: block;
+  padding: 0 14px;
+  color: black;
+  padding: 0 14px;
+  line-height: 36px;
+}
+#nav li:hover .subnav {
+  display: block;
+}
+#nav .nav-arrow-down{
+  font-size: 14px;
+}
+#header .search-btn{
+  float: right;
+}
+#header .search-btn:hover{
+  background-color: red;
+  cursor: pointer;
+}
+#header .search-icon{
+  color: white;
+  font-size: 20px;
+  line-height: 46px;
+  padding: 0 31px;
+}
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url(./img/chicago.jpg) top center / cover no-repeat;
+}
+#slider .text-content{
+  position: absolute;
+  bottom: 48px;
+  color: white;
+  /* left:50%;
+  transform: translateX(-50%); */
+  /* right: 0;
+  left: 0; */
+  width: 100%;
+  text-align: center;
+}
+#slider .text-Chicago{
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+#slider .text-description{
+  font-size: 15px;
+}
+#content {
 }
 
-#header{
-    height: 46px;
-    background-color: black;
-}
-#nav li{
-    display: inline-block;
-}
-#nav li a{
-    color : white;
-    text-decoration: none;
-    line-height: 46px;
-    padding: 0 24px;
-    display: inline-block;
-}
-#nav li:hover a{
-    color: black;
-    background-color: #ccc;
-}
-#nav .subnav{
-    display: none;
-}
-#slider{
-    
-}
-
-#content{
-    
-}
-
-#footer{
-    
+#footer {
 }

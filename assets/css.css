@@ -19,8 +19,13 @@ html {
 3.mau sac
 4.kieu dang (kieu chu , hinh trong , vuong , .....)
  */
+.clean {
+  clear: both;
+}
+.text-white {
+  color: white !important;
+}
 #main {
-
 }
 #header {
   height: 46px;
@@ -31,7 +36,7 @@ html {
   right: 0;
   z-index: 1;
 }
-#nav{
+#nav {
   display: inline-block;
 }
 #nav li {
@@ -74,17 +79,17 @@ html {
 #nav li:hover .subnav {
   display: block;
 }
-#nav .nav-arrow-down{
+#nav .nav-arrow-down {
   font-size: 14px;
 }
-#header .search-btn{
+#header .search-btn {
   float: right;
 }
-#header .search-btn:hover{
+#header .search-btn:hover {
   background-color: red;
   cursor: pointer;
 }
-#header .search-icon{
+#header .search-icon {
   color: white;
   font-size: 20px;
   line-height: 46px;
@@ -96,7 +101,7 @@ html {
   padding-top: 50%;
   background: url(./img/chicago.jpg) top center / cover no-repeat;
 }
-#slider .text-content{
+#slider .text-content {
   position: absolute;
   bottom: 48px;
   color: white;
@@ -107,16 +112,90 @@ html {
   width: 100%;
   text-align: center;
 }
-#slider .text-Chicago{
+#slider .text-Chicago {
   font-weight: 500;
   font-size: 24px;
   margin-bottom: 25px;
 }
-#slider .text-description{
+#slider .text-description {
   font-size: 15px;
 }
 #content {
 }
-
+#content .content-section {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0;
+}
+#content .section-heading {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 4px;
+}
+#content .section-sub-heading {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-style: italic;
+  opacity: 0.7;
+}
+#content .about-content {
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.4;
+}
+#content .member-list {
+  margin-top: 48px;
+}
+#content .member-name {
+  font-size: 15px;
+}
+#content .member-item {
+  float: left;
+  width: calc(100% / 3);
+  text-align: center;
+  /* width: 33.3333%; */
+}
+#content .member-img {
+  margin-top: 15px;
+  width: 154px;
+  border-radius: 10px;
+}
+/* Tour section */
+.tour-section {
+  background-color: black;
+}
+#content .tickets-list {
+  background-color: white;
+  margin-top: 40px;
+  list-style: none;
+}
+#content .tickets-list li{
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid black;
+  color: #757575;
+}
+#content .tickets-list .sold-out {
+  background-color: red;
+  color: white;
+  padding: 3px 4px;
+  margin-left: 16px;
+}
+#content .tickets-list .quantity{
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  color:#757575;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -3px;
+}
+/* Footer section */
 #footer {
 }
